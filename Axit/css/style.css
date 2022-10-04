@@ -1,0 +1,139 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+
+
+
+
+
+.header{
+    width: 100%;
+    padding: 25px 0 0 0;
+    background-color: #000;
+
+}
+.header_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+
+.nav{
+
+}
+.nav_link{
+    text-decoration: none;
+    position: relative;
+    color: #ccc;
+    font-size: 12px;
+}
+
+
+
+.container{
+    max-width: 1115px;
+    margin: 0 auto;
+}
+
+
+
+
+.intro{
+   background: url("../asset/intro.jpg") center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover
+}
+
+
+.button{
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid #fff;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.button:hover{
+    background-color: #aaa6a6;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
